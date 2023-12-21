@@ -157,5 +157,67 @@ Correct description of JSON?
 JSON stands for "JavaScript Object Notation" and is a lightweight data interchange format. It is used for data storage and exchange between a server and a client, or between different parts of an application. JSON is a text format and is easy for humans
 
 
+Final notes:
 
+Ports for HTTP, HTTPS, SSH:
 
+HTTP uses port 80 by default.
+HTTPS uses port 443 by default.
+SSH (Secure Shell) uses port 22 by default.
+HTTP status codes in the 300, 400, 500 range indicate:
+
+300 Range: Redirection. These codes indicate that the client must take additional action to complete the request, such as following a redirect.
+400 Range: Client Errors. These codes indicate that there was a problem with the client's request, like a syntax error or invalid request.
+500 Range: Server Errors. These codes indicate that the server encountered an error while processing the request and couldn't fulfill it.
+The HTTP header Content-Type allows you to specify the type of data being sent in the HTTP response body. It tells the recipient how to interpret the data. Common values for Content-Type include text/html for HTML, application/json for JSON data, image/png for PNG images, and so on.
+
+Cookie attributes:
+
+Domain: Specifies the domain for which the cookie is valid.
+Path: Specifies the URL path for which the cookie is valid.
+SameSite: Defines when a cookie should be sent in cross-origin requests.
+HTTPOnly: When set to true, the cookie cannot be accessed through JavaScript, enhancing security.
+Without the Express middleware code, I cannot provide the console.log output for an HTTP GET request with a URL path of /foo/bar. Please provide the middleware code for a more specific answer.
+
+Without the Express service code, I cannot determine the return value of a JavaScript fetch request. Please provide the code for more information.
+
+The MongoDB query { cost: { $gt: 10 }, name: /fran.*/ } will select all documents where the "cost" field is greater than 10, and the "name" field matches the regular expression /fran.*/ (e.g., "frank", "francis", etc.).
+
+User passwords should be securely hashed and salted before storing them in a database. Hashing algorithms like bcrypt are commonly used for this purpose to protect user data.
+
+Without the Node.js service code, I cannot provide the console.log output for websockets. Please provide the relevant code for a specific answer.
+
+WebSocket protocol is used for real-time, bidirectional communication between a client and a server over a single, long-lived connection. It is commonly used in web applications for features like chat, notifications, and online gaming.
+
+JSX (JavaScript XML) is a syntax extension for JavaScript that allows you to write HTML-like code within JavaScript. Curly braces {} are used to embed JavaScript expressions or variables within JSX, and they are rendered as the result of evaluating those expressions.
+
+The given React component code will generate three "Welcome" components with different names inside a "div" element. It will render as:
+
+Copy code
+Hello, Sara
+Hello, Cahal
+Hello, Edite
+The given React component code will generate an unordered list with list items containing numbers 1 to 5. It will render as:
+Copy code
+1
+2
+3
+4
+5
+The provided React component (Example) is a functional component that uses the useState hook to manage and display a count variable. It renders a paragraph showing the current count and a button to increment the count when clicked.
+
+React Hooks are used to add state and other React features to functional components. They allow functional components to manage local component state, perform side effects, and more.
+
+The useEffect hook in React is used for performing side effects in functional components. It allows you to run code after the component has rendered or when certain dependencies change. Common use cases include data fetching, DOM manipulation, and setting up subscriptions.
+
+The provided code is defining routes for a React application using the React Router library. It sets up routes for different URLs, rendering corresponding components when the URL matches. The layout consists of "Home," "Blogs," "Contact," and a "NoPage" component for any other unmatched route.
+
+npm (Node Package Manager) plays a crucial role in web development by managing and distributing JavaScript packages and libraries. It allows developers to easily install, manage, and share dependencies for their projects.
+
+The package.json file in an npm project serves as a manifest file that contains metadata about the project and its dependencies. It also includes scripts for various project tasks and configuration settings.
+
+The fetch function in JavaScript is used to make network requests (typically HTTP) to fetch resources like data from a server. It returns a Promise that resolves to the Response to that request.
+
+Node.js is a JavaScript runtime that allows you to run JavaScript on the server-side. It provides a platform for building scalable and efficient server-side applications.
+
+Vite is a build tool and development server for modern web development. It is designed to be fast and efficient, especially for development with JavaScript frameworks like Vue.js and React. Vite's development server provides features like hot module replacement for a smooth development experience.

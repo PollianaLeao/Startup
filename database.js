@@ -1,12 +1,10 @@
 const config = require('./dbConfig.json');
 const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
-const db = client.db('rental');
-
+// Create a MongoClient with a MongoClientOptions object to set the Stable API version
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(url, {
   serverApi: {
     version: ServerApiVersion.v1,

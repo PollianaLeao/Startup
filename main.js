@@ -10,7 +10,6 @@ if (authenticatedUser) {
     // If the user is authenticated, display their name
     usernameDisplay.textContent = `Welcome, ${authenticatedUser}`;
 }
-
 loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -93,4 +92,7 @@ recipeForm.addEventListener("submit", (event) => {
         console.error("Error submitting recipe:", error);
         alert("Recipe submission failed. Please try again.");
     });
+
 });
+
+
